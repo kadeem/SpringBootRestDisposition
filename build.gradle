@@ -47,6 +47,11 @@ dependencies {
     runtime "com.fasterxml.jackson.datatype:jackson-datatype-jdk8"
     runtime "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
     runtime "com.fasterxml.jackson.module:jackson-module-kotlin"
+
+    compile "org.springframework.boot:spring-boot-starter-data-jpa"
+
+    // JDBC drivers
+    runtime("org.hsqldb:hsqldb")
 }
 
 task wrapper(type: Wrapper) {
